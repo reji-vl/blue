@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "test_blue"{
 
 resource "azurerm_virtual_network" "test_blue_net"{
 	name="testbluenet"
-	resource_group_name = "${azurerm_resource_group.test_blue.name}"
+	resource_group_name = azurerm_resource_group.test_blue.name
 	address_space = ["10.0.0.0/24"]
 	location = var.loca	
 }
