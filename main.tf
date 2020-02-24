@@ -35,7 +35,7 @@ resource "azurerm_network_interface" "test_net_iface"{
 	
 	ip_configuration{	
 		name = "eth0"
-		subnet_id = "${azurerm_subnet.test_blue_sub.id}"
+		subnet_id = azurerm_subnet.test_blue_sub.id
 		private_ip_address_allocation = "Dynamic"
 	}
 
