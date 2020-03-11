@@ -1,16 +1,16 @@
 variable "subscription_id" {
 	type = string
-	default = "https://bluekvreji.vault.azure.net/secrets/subID/e370dfaa2d8e437f95f65a0f30dc13b2"	
+	default = "https://euw-dev-127-app-1-tkv.vault.azure.net/secrets/subscription-id/d6a081ae153b420fa6cdf4f0c7460d51"	
 }
 variable "client_id" {
 	type = string
-	default = "https://bluekvreji.vault.azure.net/secrets/tenantId/3b39d714dd9d422faca88cfddad3dc36"
+	default = "https://euw-dev-127-app-1-tkv.vault.azure.net/secrets/client-id/03c8ca6695ab4d46955be6fe987b5e36"
 }
 variable "client_secret" {
 	type = string
-	default = "https://bluekvreji.vault.azure.net/secrets/clientid/2871d1c95d99487592fdd2972ead3602"
+	default = "https://euw-dev-127-app-1-tkv.vault.azure.net/secrets/client-secret/714a843bc11a4b94b11824c7aa0ac088"
 }
 variable "tenant_id" {
 	type = string
-	default = "https://bluekvreji.vault.azure.net/secrets/clipass/dda0c82ec19144af99d2b2b4cab4b41b"
+	default = "https://euw-dev-127-app-1-tkv.vault.azure.net/secrets/tenant-id/bcb8808448b94f87a8c7b8ca929ff11c"
 }
