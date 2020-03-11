@@ -3,10 +3,10 @@ variable "loca"{
 }
 
 provider "azurerm"{
-	subscription_id = var.subscription_id
-	client_id = var.client_id
-	client_secret = var.client_secret
-	tenant_id = var.tenant_id
+	subscription_id = "3ff709d1-14a1-4488-98a8-428d74bfd43d"
+	client_id = "f0b4c9c4-67b6-45b2-bc08-49b694219a02"
+	client_secret = "d84a891d-c280-46e8-97fd-9f0c2e1672f0"
+	tenant_id = "105b2061-b669-4b31-92ac-24d304d195dc"
 	features {}
 }
 
