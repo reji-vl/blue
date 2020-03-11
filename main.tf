@@ -43,7 +43,7 @@ resource "azurerm_network_interface" "test_net_iface"{
 }
 
 resource "azurerm_virtual_machine" "test_blue_vm"{
-	name = "testbluevm"
+	name = "testbluevmreji"
 	resource_group_name = azurerm_resource_group.test_blue.name
 	location = var.loca
 	network_interface_ids = ["${azurerm_network_interface.test_net_iface.id}"]
