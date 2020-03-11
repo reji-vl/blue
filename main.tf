@@ -11,26 +11,26 @@ provider "azurerm"{
 }
 
 resource "azurerm_resource_group" "test_blue"{
-	name = "testblue"
+	name = "testbluereji"
 	location = var.loca
 }
 
 resource "azurerm_virtual_network" "test_blue_net"{
-	name="testbluenet"
+	name="testbluenetreji"
 	resource_group_name = azurerm_resource_group.test_blue.name
 	address_space = ["10.0.0.0/24"]
 	location = var.loca	
 }
 
 resource "azurerm_subnet" "test_blue_sub"{
-	name = "testbluesub"
+	name = "testbluesubreji"
 	resource_group_name = azurerm_resource_group.test_blue.name
 	virtual_network_name = azurerm_virtual_network.test_blue_net.name
 	address_prefix = "10.0.0.0/24"
 }
 
 resource "azurerm_network_interface" "test_net_iface"{
-	name = "testnetiface"
+	name = "testnetifacereji"
 	resource_group_name = azurerm_resource_group.test_blue.name
 	location = var.loca
 	
@@ -57,7 +57,7 @@ resource "azurerm_virtual_machine" "test_blue_vm"{
 	}
 	
 	storage_os_disk{
-		name = "testblueos"
+		name = "testblueosreji"
 		create_option = "FromImage"
 		caching = "ReadWrite"
 		managed_disk_type = "Standard_LRS"
@@ -65,7 +65,7 @@ resource "azurerm_virtual_machine" "test_blue_vm"{
 	}
 	
 	os_profile{
-		computer_name = "testbluecompute"
+		computer_name = "testbluecomputereji"
 		admin_username = "testadmin"
 		admin_password = "Testpass@12"
 	}
