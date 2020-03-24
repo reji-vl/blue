@@ -1,4 +1,8 @@
-
+- task: Terraform@2
+  inputs:
+    Arguments: 
+    InstallTerraform: false
+    UseAzureSub: false
 pool:
   name: Azure Pipelines
 steps:
