@@ -22,7 +22,7 @@ steps:
     UseAzureSub: true
     ConnectedServiceNameARM: 'Free Trial (ab833764-bdf6-4d19-af30-0af2a16fd669)'
   
- - task: petergroenewegen.PeterGroenewegen-Xpirit-Vsts-Release-Terraform.Xpirit-Vsts-Release-Terraform.Terraform@2
+- task: Terraform@2
   displayName: 'Terraform init'
   inputs:
     TemplatePath: '$(System.DefaultWorkingDirectory)/_custorder/drop'
