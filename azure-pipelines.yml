@@ -15,7 +15,7 @@ steps:
 - task: petergroenewegen.PeterGroenewegen-Xpirit-Vsts-Release-Terraform.Xpirit-Vsts-Release-Terraform.Terraform@2
   displayName: 'Terraform init'
   inputs:
-    TemplatePath: '$(System.DefaultWorkingDirectory)/_custorder/drop'
+    TemplatePath: '$(System.DefaultWorkingDirectory)/drop'
     Arguments: init
     InstallTerraform: true
     Version: 0.12.21
