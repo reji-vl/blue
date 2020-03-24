@@ -1,6 +1,7 @@
   
 pool:
   name: Azure Pipelines
+  vmImage: "vs2017-win2016"
 steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
