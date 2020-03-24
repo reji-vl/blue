@@ -25,7 +25,6 @@ steps:
 - task: Terraform@2
   displayName: 'Terraform init'
   inputs:
-    TemplatePath: '$(System.DefaultWorkingDirectory)/_custorder/drop'
     Arguments: init
     InstallTerraform: true
     Version: 0.12.21
