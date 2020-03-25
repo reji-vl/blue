@@ -12,13 +12,9 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
  
-- task: Terraform@2
-  displayName: 'Terraform init'
+- task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+  displayName: 'Install Terraform 0.12.21'
   inputs:
-    Arguments: init
-    InstallTerraform: true
-    Version: 0.12.21
-    UseAzureSub: true
-    ConnectedServiceNameARM: 'Free Trial (ab833764-bdf6-4d19-af30-0af2a16fd669)'
+    terraformVersion: 0.12.21
 
 
