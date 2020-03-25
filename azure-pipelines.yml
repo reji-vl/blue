@@ -12,11 +12,10 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   
-stage 1:
- 
- - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
-  displayName: 'Install Terraform 0.12.21'
-  inputs:
-    terraformVersion: 0.12.21
+stage:
+  - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+    displayName: 'Install Terraform 0.12.21'
+    inputs:
+      terraformVersion: 0.12.21
 
 
